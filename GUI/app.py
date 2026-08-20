@@ -188,9 +188,10 @@ class DIPLabApp:
 
     def _select_image(self):
         """Open file dialog and load the selected image."""
+        input_dir = _PROJECT_ROOT / "Input_images" if (_PROJECT_ROOT / "Input_images").exists() else _PROJECT_ROOT / "Input"
         path = filedialog.askopenfilename(
             title="Select an image",
-            initialdir=str(_PROJECT_ROOT / "Input"),
+            initialdir=str(input_dir),
             filetypes=[
                 ("Image files", "*.png *.jpg *.jpeg *.bmp *.tiff *.webp"),
                 ("All files", "*.*"),
