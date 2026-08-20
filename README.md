@@ -7,9 +7,10 @@ Course work and experiments for the Digital Image Processing course.
 | File | Description |
 | :--- | :--- |
 | `rgb2grey.py` | Extracts RGB channels and converts an image to greyscale, outputs a 2×2 grid. |
+| `bit_plane_slicing.py` | Converts an image to greyscale, extracts all 8 bit planes (Bit 0 to Bit 7), and outputs a 3×3 comparison grid. |
 | `housie_tickets.py` | Generates and renders valid Housie/Tambola tickets as a PNG. |
 | `GUI/app.py` | Interactive desktop toolkit for running DIP operations on images. |
-| `GUI/operations/` | Drop-in modules for the GUI - add new operations as Python files here. |
+| `GUI/operations/` | Drop-in modules for the GUI (RGB & Channels, Bit Plane Slicing, etc.). |
 
 ## Running the GUI
 
